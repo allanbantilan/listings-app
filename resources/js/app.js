@@ -6,6 +6,7 @@ import { createInertiaApp, Head, Link } from "@inertiajs/vue3";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 
 import Main from "./Layouts/Main.vue";
+import { setThemeOnLoad } from "./theme";
 
 createInertiaApp({
     title: (title) => `My App ${title}`,
@@ -26,6 +27,9 @@ createInertiaApp({
     },
     progress: {
         color: "#fff",
-        showSpinner: true,
+        // showSpinner: true,
     },
 });
+
+
+setThemeOnLoad()
