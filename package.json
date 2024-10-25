@@ -18,5 +18,8 @@
     "dependencies": {
         "@inertiajs/vue3": "^1.2.0",
         "vue": "^3.4.38"
-    }
+    },
+    "engines": {
+    "node": ">=14.x" 
+  }
 }
