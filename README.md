@@ -1,77 +1,35 @@
-## After cloning this repo, do the following steps:
-1. `composer install`
-2. `npm install`
-3. Duplicate the `.env.example` file and rename it to `.env`
-4. Create the `database.sqlite` in database directory
-5. Run `php artisan migrate`
-6. Run `php artisan key:generate`
-7. Run `php artisan serve`
-8. Run `npm run dev`
+# Listings App
 
+This is a **Listings App** built with **Laravel 11**, **Vue 3**, and **Inertia.js**. The application allows users to create and manage listings, with an approval system managed by the admin. The app features user roles, with separate dashboards for users and admins.
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Features
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+- **User Registration and Authentication**: Users can register, log in, and manage their accounts.
+- **Post Listings**: Users can create new listings.
+- **Admin Approval**: Listings must be approved by an admin before being published.
+- **Admin Dashboard**: Admins can view, approve, and suspend listings and users.
+- **User Dashboard**: Users can manage their listings and see their status (approved, pending, or rejected).
+- **Admin Control**: Admins can suspend users from posting new listings.
+  
+## Technology Stack
 
-## About Laravel
+- **Backend**: Laravel 11
+- **Frontend**: Vue 3
+- **SPA**: Inertia.js
+- **Database**: SQlite
+  
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Admin Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **View All User Listings**: Admins can see a list of all user-submitted listings.
+- **Approve or Reject Listings**: Admins can approve listings to make them visible to the public or reject them.
+- **Suspend Users**: Admins have the ability to suspend users from posting new listings.
+- **Manage Users**: Admins can view user details and suspend them if necessary.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### User Features
 
-## Learning Laravel
+- **Post Listings**: Users can submit new listings, which must be approved by an admin before they are visible.
+- **Manage Listings**: Users can view and manage the listings they have posted.
+- **Listing Status**: Users can see the status of their listings (approved, pending approval, or rejected).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
